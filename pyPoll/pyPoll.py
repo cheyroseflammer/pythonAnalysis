@@ -1,7 +1,7 @@
 import os
 import csv
 
-filepath = os.path.join = ('election_data.csv')
+filepath = os.path.join = ('Resources/election_data.csv')
 
 # Define functions
 def totalVotes(election_data):
