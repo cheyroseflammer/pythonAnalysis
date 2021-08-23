@@ -51,9 +51,9 @@ with open(filepath, newline='', encoding='utf-8') as f:
 # Output result file
 results_file = "analysis/pyPoll_results.txt"
 with open(results_file, 'w', newline='', encoding='utf-8') as file:
-    file.write('Election Results!\n')
+    file.write('Election Results\n')
     file.write('----------------------\n')
-    file.write(f'Total votes: {total_votes}\n')
+    file.write(f'Total Votes: {total_votes}\n')
     file.write('----------------------\n')
     # have to loop again to grab each canidates info
     for canidate in canidate_list:

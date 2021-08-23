@@ -28,13 +28,8 @@ with open(filepath, 'r', encoding='utf-8') as f:
 for i in range(len(profit_loss)-1):
     # Add values to the change list 
     change.append(profit_loss[i+1]-profit_loss[i])
-    print(profit_loss[i+1])
-    print("------------------")
-    print(profit_loss[i])
     # getting total change by summing the change list
     total_change = sum(change)
-    print("------------------")
-    print(total_change)
 # Average Change
 average_change = round((total_change/(total_months-1)), 2)
 # Max profit and loss
@@ -48,11 +43,22 @@ loss_month = months[max_loss_month+1]
 # Terminal print statements
 print('Financial Analysis')
 print('------------------------')
-print(f'Total months: {str(total_months)}')
+print(f'Total Months: {str(total_months)}')
 print(f'Total: ${total_amount}')
 print(f'Average Change: ${average_change}')
-print(f'Greatest Increase {profit_month} {max_profit}')
-print(f'Greatest decrease {loss_month} {max_loss}')
+print(f'Greatest Increase in Profits: {profit_month} (${max_profit})')
+print(f'Greatest decrease in Profits: {loss_month} (${max_loss})')
+
+# Output result text file
+results_file = 'analysis/pyBank_results.txt'
+with open (results_file, 'w', newline='', encoding='utf-8') as file:
+    file.write('Financial Analysis\n')
+    file.write('------------------------\n')
+    file.write(f'Total Months: {total_months}\n')
+    file.write(f'Total: ${total_amount}\n')
+    file.write(f'Average Change: ${average_change}\n')
+    file.write(f'Greatest Increase in Profits: {profit_month} (${max_profit})\n')
+    file.write(f'Greatest Decrease in Profits: {loss_month} (${max_loss})\n')
 
         
 
