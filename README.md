@@ -2,7 +2,7 @@
 
 ## 1.) PyBank
 ---
- In this challenge a python script is to be generated to analyze the financial records of (small) demo company data set called [budget_data.csv](pyBank/Resources/budget_data.csv). The dataset is composed of two colums: Date and Profit/Losses.
+ In this challenge a [python script](pyBank/main.py) is to be generated to analyze the financial records of (small) demo company data set called [budget_data.csv](pyBank/Resources/budget_data.csv). The dataset is composed of two colums: Date and Profit/Losses.
 
  **The script should analyze records and calculate each of the following:**
  - The total number of months in the data set
@@ -16,7 +16,7 @@
 
 ## 2.) PyPoll
 --- 
-In this challange a python script is to be generated to analyze the election results of a demo election poll data called [election_data.csv](pyPoll/Resources/election_data.csv). The dataset is composed of three columns: Voter ID, County, and Candidate. 
+In this challange a [python script](pyPoll/main.py) is to be generated to analyze the election results of a demo election poll data called [election_data.csv](pyPoll/Resources/election_data.csv). The dataset is composed of three columns: Voter ID, County, and Candidate. 
 
 **The script should analyzes the votes and calculates each of the following:**
 - The total number of votes cast
